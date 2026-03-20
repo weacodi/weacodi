@@ -39,7 +39,6 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#apps">Apps</a></li>
           <li><a class="nav-link scrollto" href="#diagram">Weather Comfort Diagram™</a></li>
           <li><a class="nav-link scrollto" href="#docs">Docs</a></li>
           <li><a class="nav-link scrollto" href="#license">License</a></li>
@@ -71,30 +70,6 @@ helping you assess atmospheric conditions in just one second.
 
   <main id="main">
 
-
-<section id="apps" class="about-mf sect-pt4 route">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="box-shadow-full">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="about-me pt-4 pt-md-0">
-                <div class="title-box-2">
-                  <h5 class="title-left">Get the App</h5>
-                </div>
-                <p class="lead mb-3">Download Weacodi for iOS and Android.</p>
-                <a href="https://github.com/weacodi/releases/releases" target="_blank" rel="noopener">Releases</a>
-                <br />
-                <a href="https://weacodi.github.io/weacodi/pwa/" target="_blank" rel="noopener">Open Web App (PWA)</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="about" class="about-mf sect-pt4 route">
     <div class="container">
@@ -217,15 +192,50 @@ The diagram consists of a set of combined graphs that display various weather pa
   </div>
 </div>
 
+<div class="mt-4 p-0 rounded overflow-hidden" style="background: #fff;">
+  <div class="px-4 pt-4 pb-1">
+    <h5 class="mb-0">Weacodi mobile applications</h5>
+  </div>
+  <div class="row g-0 flex-column">
+    <div class="col-12 px-4 pt-3 pb-4">
+      <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
+        <div class="flex-grow-1">
+          <h4 class="mb-3 fw-normal">iPhone / iPad</h4>
+          <p class="small mb-3">Download the official Weacodi app for iPhone from the App Store.</p>
+          <div class="mb-3">
+            <img src="assets/img/barcode-apple.png" alt="Weacodi App Store QR code" class="img-fluid" style="max-width: 120px; height: auto;">
+          </div>
+          <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/weacodi/id6759859771" target="_blank" rel="noopener">Open in App Store</a>
+        </div>
+        <div class="d-flex justify-content-end flex-shrink-0 align-self-center">
+          <img src="assets/img/weacodi-ios-app.jpg" alt="Weacodi iPhone app preview" class="img-fluid rounded" style="max-width: 150px; width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+    <div class="col-12 px-4 pt-3 pb-4" style="border-top: 1px solid rgba(0, 0, 0, 0.08);">
+      <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
+        <div class="flex-grow-1">
+          <h4 class="mb-3 fw-normal">Android</h4>
+          <p class="small mb-3">The Android app is currently in closed testing. Contact <a href="mailto:weacodi@gmail.com">weacodi@gmail.com</a> for early access.</p>
+        </div>
+        <div class="d-flex justify-content-end flex-shrink-0 align-self-center">
+          <img src="assets/img/weacodi-android-app.jpg" alt="Weacodi Android app preview" class="img-fluid rounded" style="max-width: 150px; width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="mt-4 p-3 bg-light rounded">
   <h5>Weacodi Grafana Plugin</h5>
-  <p class="small mb-2">Official datasource + panel bundle for Grafana, powered by the Fastify API from this project.</p>
+  <p class="small mb-2">Datasource + panel for Grafana.</p>
   <img src="assets/img/grafana-stockholm.png" alt="Weacodi Grafana plugin" class="img-fluid rounded shadow-sm mb-3">
   <div class="mb-2">
     <a class="btn btn-primary btn-sm me-2" href="https://github.com/weacodi/weacodi-grafana-plugin/releases" target="_blank" rel="noopener">Download</a>
-    <a class="btn btn-outline-secondary btn-sm" href="https://github.com/weacodi/weacodi-grafana-plugin" target="_blank" rel="noopener">Source (AGPL)</a>
+    <a class="btn btn-outline-secondary btn-sm me-2" href="https://github.com/weacodi/weacodi-grafana-plugin" target="_blank" rel="noopener">Source (GitHub)</a>
+    <a class="btn btn-outline-secondary btn-sm" href="https://codeberg.org/weacodi/weacodi-grafana-plugin" target="_blank" rel="noopener">Source (Codeberg)</a>
   </div>
-  <p class="small mb-0">Code licensed under <strong>AGPL‑3.0</strong>; the Weather Comfort Diagram concept remains under <strong>CC BY-SA 4.0</strong>.</p>
+  <p class="small mb-0">Code licensed under <strong>AGPL‑3.0</strong>; the Weather Comfort Diagram™ concept remains under <strong>CC BY-SA 4.0</strong>.</p>
 </div>
                                     
                                     
@@ -353,18 +363,19 @@ The diagram consists of a set of combined graphs that display various weather pa
                   <p>In practice, this means:</p>
                   <ul>
                     <li><strong>Use it:</strong> You may embed the diagram in dashboards, widgets, wearables, or any other project, whether commercial or personal.</li>
-                    <li><strong>Credit it:</strong> You must provide attribution by linking to <a href="https://weacodi.com">https://weacodi.com</a> or <a href="https://weacodi.github.io/weacodi/">https://weacodi.github.io/weacodi/</a> and by referring to the work as “Weather Comfort Diagram™” or “Weacodi®”, including the author names.</li>
+                    <li><strong>Credit it:</strong> You must provide attribution by linking to <a href="https://weacodi.com">https://weacodi.com</a> and by referring to the work as “Weather Comfort Diagram™” or “Weacodi®”, including the author names.</li>
                     <li><strong>Share alike:</strong> Adaptations of the content must be published under the CC BY-SA 4.0 license.</li>
                     <li><strong>Source code:</strong> Any implementation source code should be released under a copyleft license (such as AGPL-3.0), so that all improvements remain open.</li>
                   </ul>
 
                   <h4>Authors &amp; Contact</h4>
-                  <p><strong>Authors:</strong></p>
-                  <p>Oleksii Zubovskyi<br>Olena Zubovska</p>
+                  <p><strong>Authors:</strong><br>Oleksii Zubovskyi<br>Olena Zubovska</p>
                   <p><strong>Email:</strong><br><a href="mailto:weacodi@gmail.com">weacodi@gmail.com</a><br><a href="mailto:zubovsky@gmail.com">zubovsky@gmail.com</a></p>
                   <p><strong>Website:</strong><br><a href="https://weacodi.com">https://weacodi.com</a></p>
-                  <p><strong>GitHub Pages:</strong><br><a href="https://weacodi.github.io/weacodi/">https://weacodi.github.io/weacodi/</a></p>
                   <p><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/alexej-zubovsky-43341651/">Oleksii Zubovskyi</a></p>
+
+                  <h4 class="mt-4 pt-2">Citation</h4>
+                  <p>Zubovskyi, O., &amp; Zubovska, O. (2025). Weacodi - One Second Forecast: An alternative way to visualize the weather forecast — helping to assess atmospheric conditions in just one second. weacodi.com. <a href="https://doi.org/10.5281/zenodo.18916318" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.18916318</a></p>
 
                   <h4>Trademark Notice</h4>
                   <p>Weacodi® and any stylized variants are registered trademarks of the project authors Oleksii Zubovskyi and Olena Zubovska.</p>
